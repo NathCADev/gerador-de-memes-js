@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de memes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/256/2618/2618366.png" type="image/png">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Gerador de Memes</h1>
+            <p class="subtitulo">Crie memes em segundos!</p>
+        </div>
+        
+        <div class="gerador-meme">
+            <div class="controles">
+                <div class="upload-container">
+                    <label class="upload-btn">
+                        <span><i class="fas fa-cloud-upload-alt"></i> Escolha uma imagem</span>
+                        <input type="file" id="imageUpload" accept="image/*" class="upload-input">
+                    </label>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-arrow-up"></i>
+                    <input type="text" id="textoSup" placeholder="Texto Superior" class="text-input">
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-grip-lines"></i>
+                    <input type="text" id="textoCentral" placeholder="Texto Central" class="text-input">
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-arrow-down"></i>
+                    <input type="text" id="textoInf" placeholder="Texto Inferior" class="text-input">
+                </div>
+                
+                <div class="option-group">
+                    <div class="option-label">
+                        <span>Cor do Texto:</span>
+                        <div class="color-picker">
+                            <div class="color-preview" id="colorPreview" style="background-color: #FFFFFF;"></div>
+                            <input type="color" id="fontColor" value="#FFFFFF" class="color-input">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="option-group">
+                    <div class="option-label">
+                        <span>Tamanho da Fonte:</span>
+                        <span id="fontSizeValue">50</span>
+                    </div>
+                    <input type="range" id="fontSize" min="10" max="100" value="50" class="slider">
+                </div>
+                
+                <div class="buttons">
+                    <button id="downloadMeme" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Baixar Meme
+                    </button>
+                </div>
+            </div>
+            
+            <div class="base-container">
+                <canvas id="baseMeme"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
