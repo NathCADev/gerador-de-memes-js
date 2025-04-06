@@ -28,4 +28,6 @@ Um projeto simples feito com HTML, CSS e JavaScript puro, onde você pode criar 
 
 Esse projeto foi criado com fins educacionais para praticar JavaScript e manipulação de imagens com a API do Canvas.
 
+## Live Preview
 
+https://nathcadev.github.io/gerador-de-memes-js/
